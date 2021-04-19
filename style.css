@@ -1,0 +1,10 @@
+html, body{
+    height: 100%
+}
+
+.header{
+    height: 25%;
+    border: 3px solid lightskyblue;
+    text-align: center;
+
+}
