@@ -3,8 +3,37 @@ html, body{
 }
 
 .header{
-    height: 25%;
-    border: 3px solid lightskyblue;
+    padding: 5%;
     text-align: center;
+    background-color: #3D8BE8;
+}
 
+.column{
+    float: left;
+    padding: 2%;
+}
+.column.side{
+    width: 25%;
+}
+.column.main{
+    width: 50%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.footer{
+    padding: 2.5%;
+    position: absolute;
+    text-align: center;
+    bottom: 0%;
+    background-color: #3D8BE8;
 }
